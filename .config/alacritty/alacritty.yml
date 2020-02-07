@@ -1,0 +1,10 @@
+tabspaces: 4
+font:
+  normal:
+    family: Roboto Mono for Powerline
+    style: Regular
+  bold:
+    family: Roboto Mono for Powerline
+  italic:
+    family: Roboto Mono for Powerline
+
