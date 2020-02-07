@@ -1,0 +1,9 @@
+set $cursor_theme "Humanity-Dark"
+
+# This should set the cursor theme for most applications
+seat seat0 xcursor_theme $cursor_theme
+
+# This is a workaround for GTK applications running on Wayland.
+# They sadly ignore XDG files and go with gsettings instead.
+exec_always gsettings set org.gnome.desktop.interface cursor-theme $cursor_theme
+
