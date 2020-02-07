@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+alias dotfiles='/usr/bin/env git --git-dir=$HOME/git/dotfiles/ --work-tree=$HOME'
+git clone --bare git@github.com:lihram/dotfiles.git $HOME/git/dotfiles
+dotfiles checkout
+dotfiles config --local status.showUntrackedFiles no
+
