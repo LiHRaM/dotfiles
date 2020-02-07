@@ -1,0 +1,48 @@
+#!/usr/bin/env ion
+
+# Variables
+
+let kbd = "1:1:AT_Translated_Set_2_keyboard"
+
+fn get_time
+    date "+%Y/%m/%d %H:%M"
+end
+
+fn battery_attr bat attr
+    upower --show-info $bat | egrep $attr | awk '{print $2}'
+end
+
+fn get_batteries
+    let count = 0;
+    let batteries = $(upower --enumerate | grep 'BAT')
+    for bat in @lines(batteries)
+        let state = $(battery_attr $bat "state")
+        let pct = $(battery_attr $bat "percentage")
+        let plugged = ''
+        match $state
+            case "discharging"; let plugged = '⚠'
+            case _;             let plugged = '⚡'
+        end
+        echo "BAT$count: $plugged $pct"
+        let count += 1
+    end
+end
+
+fn get_volume
+    echo "Volume:"
+    amixer sget Master | awk -F"[][]" '/dB/ { print $2 }'
+end
+
+fn get_network
+    let network = network=$(ip route get 1.1.1.1 | grep -Po '(?<=dev\s)\w+' | cut -f1 -d ' ')
+    dmesg | grep $network | grep renamed | awk 'NF>1{print $NF}'
+end
+
+fn get_language
+    swaymsg -r -t get_inputs | awk '/1:1:AT_Translated_Set_2_keyboard/;/xkb_active_layout_name/' | grep -A1 '\b1:1:AT_Translated_Set_2_keyboard\b' | grep "xkb_active_layout_name" | awk -F '"' '{print $4}'
+end
+
+let stats = [ $(get_language) $join(@lines($(get_volume))) @lines($(get_batteries)) $(get_time) ]
+
+# Output
+echo $join(stats " | ")
