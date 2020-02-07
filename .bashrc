@@ -82,3 +82,4 @@ if [ -f ~/.cargo/env ]; then
 fi
 source ~/.scripts/env
 source ~/.config/starship/env
+export PATH="/snap/bin/:$PATH"
