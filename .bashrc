@@ -83,4 +83,9 @@ fi
 source ~/.scripts/env
 source ~/.config/starship/env
 source ~/.config/node/env
-export PATH="/snap/bin/:$PATH"
+if [[ -r $HOME/git/mcfly/mcfly.bash ]]; then
+    source $HOME/git/mcfly/mcfly.bash
+fi
+PATH="$HOME/.local/bin:$PATH"
+PATH="/opt/flutter/bin:$PATH"
+export PATH="/usr/lib/android-sdk/tools/bin:$PATH"
