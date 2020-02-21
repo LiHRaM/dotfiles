@@ -1,0 +1,26 @@
+{
+    "files.autoSave": "afterDelay",
+    "window.zoomLevel": 0,
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.fontFamily": "Roboto Mono for Powerline",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "explorer.confirmDelete": false,
+    "git.enableSmartCommit": true,
+    "dart.flutterSdkPath": "/opt/flutter",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "Material Theme",
+    "latex-workshop.message.update.show": false,
+    "latex-workshop.latex.external.build.command": "tectonic",
+    "latex-workshop.latex.external.build.args": [
+        "report/master.tex"
+    ]
+}
