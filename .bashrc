@@ -8,6 +8,21 @@ case $- in
       *) return;;
 esac
 
+# Source files if they exist
+# usage: source_if $1
+function source_if() {
+    local path=$1
+    if [[ -r $path ]]; then
+        source $path
+    fi
+}
+
+# Prepend to path
+function path_prepend() {
+    local prep=$1
+    PATH="$prep:$PATH"
+}
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -76,16 +91,17 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# reference the rust environment if it's been installed
-if [ -f ~/.cargo/env ]; then
-    . ~/.cargo/env
-fi
-source ~/.scripts/env
-source ~/.config/starship/env
-source ~/.config/node/env
-if [[ -r $HOME/git/mcfly/mcfly.bash ]]; then
-    source $HOME/git/mcfly/mcfly.bash
-fi
-PATH="$HOME/.local/bin:$PATH"
-PATH="/opt/flutter/bin:$PATH"
-export PATH="/usr/lib/android-sdk/tools/bin:$PATH"
+
+source_if $HOME/.cargo/env
+source_if $HOME/.scripts/env
+source_if $HOME/.config/starship/env
+source_if $HOME/.config/node_env
+source_if $HOME/git/mcfly/mcfly.bash
+
+path_prepend /opt/node/bin
+path_prepend $HOME/.npm-packages/bin
+path_prepend $HOME/.local/bin
+path_prepend /opt/flutter/bin
+path_prepend /usr/lib/android-sdk/tools/bin
+
+export PATH=$PATH
