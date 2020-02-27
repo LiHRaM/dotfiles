@@ -10,17 +10,25 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "editor.fontFamily": "Roboto Mono for Powerline",
+    "editor.fontFamily": "Cascadia Code PL",
     "git.confirmSync": false,
     "git.autofetch": true,
     "explorer.confirmDelete": false,
     "git.enableSmartCommit": true,
     "dart.flutterSdkPath": "/opt/flutter",
     "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "Material Theme",
     "latex-workshop.message.update.show": false,
     "latex-workshop.latex.external.build.command": "tectonic",
     "latex-workshop.latex.external.build.args": [
         "report/master.tex"
-    ]
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "python.jediEnabled": false,
+    "cmake.configureOnOpen": false,
+    "liveshare.presence": true,
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    }
 }
