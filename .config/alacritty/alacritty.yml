@@ -1,10 +1,10 @@
 tabspaces: 4
 font:
   normal:
-    family: Roboto Mono for Powerline
+    family: Cascadia Code PL
     style: Regular
   bold:
-    family: Roboto Mono for Powerline
+    family: Cascadia Code PL
   italic:
-    family: Roboto Mono for Powerline
+    family: Cascadia Code PL
 
