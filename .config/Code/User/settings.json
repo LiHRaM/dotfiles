@@ -26,9 +26,5 @@
     "python.jediEnabled": false,
     "cmake.configureOnOpen": false,
     "liveshare.presence": true,
-    "editor.quickSuggestions": {
-        "other": false,
-        "comments": false,
-        "strings": false
-    }
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}"
 }
