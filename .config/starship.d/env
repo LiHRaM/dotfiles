@@ -1,2 +1,5 @@
 #!/usr/bin/env bash
-eval "$(starship init bash)"
+
+if [ -f starship ]; then
+    eval "$(starship init bash)"
+fi
