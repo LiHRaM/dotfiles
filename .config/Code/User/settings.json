@@ -26,5 +26,9 @@
     "python.jediEnabled": false,
     "cmake.configureOnOpen": false,
     "liveshare.presence": true,
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}"
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "rust-analyzer.highlightingOn": true,
+    "rust-analyzer.serverPath": "rust-analyzer"
 }

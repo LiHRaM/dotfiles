@@ -2,9 +2,5 @@ tabspaces: 4
 font:
   normal:
     family: Cascadia Code PL
-    style: Regular
-  bold:
-    family: Cascadia Code PL
-  italic:
-    family: Cascadia Code PL
+background_opacity: 0.8
 
