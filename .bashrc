@@ -94,7 +94,6 @@ fi
 
 source_if $HOME/.cargo/env
 source_if $HOME/.scripts/env
-source_if $HOME/.config/starship.d/env
 source_if $HOME/.config/node_env
 source_if $HOME/git/mcfly/mcfly.bash
 
@@ -105,3 +104,9 @@ path_prepend /opt/flutter/bin
 path_prepend /usr/lib/android-sdk/tools/bin
 
 export PATH=$PATH
+
+# Launch the starship :)
+starship_bin=$(which starship)
+if [ -e $starship_bin ]; then
+  eval "$($starship_bin init bash)"
+fi
