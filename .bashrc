@@ -94,7 +94,7 @@ fi
 
 source_if $HOME/.cargo/env
 source_if $HOME/.scripts/env
-source_if $HOME/.config/starship/env
+source_if $HOME/.config/starship.d/env
 source_if $HOME/.config/node_env
 source_if $HOME/git/mcfly/mcfly.bash
 
