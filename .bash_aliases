@@ -1,8 +1,4 @@
-function alias_if() {
-	if [ -x $2 ]; then
-		alias $1=$2
-	fi
-}
-
-alias_if grep rg
-alias_if vim nvim
+# dotfiles alias
+alias dotfiles='/usr/bin/env git --git-dir=$HOME/git/dotfiles/ --work-tree=$HOME'
+alias vim=nvim
+alias grep=rg

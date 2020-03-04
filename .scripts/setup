@@ -1,6 +1,18 @@
 #!/usr/bin/env sh
-alias dotfiles='/usr/bin/env git --git-dir=$HOME/git/dotfiles/ --work-tree=$HOME'
-git clone --bare git@github.com:lihram/dotfiles.git $HOME/git/dotfiles
-dotfiles checkout
-dotfiles config --local status.showUntrackedFiles no
 
+# We begin by setting a temporary alias for manipulating the dotfiles
+alias dotfiles='/usr/bin/env git --git-dir=$HOME/git/dotfiles/ --work-tree=$HOME'
+
+# We clone the repository and place it in the git directory, where we keep our repositories.
+# Note: If you want this elsewhere, just change the path from `$HOME/git/dotfiles` to whatever you want.
+git clone --bare git@github.com:lihram/dotfiles.git $HOME/git/dotfiles
+
+# We write the files from the repository to our local tree
+# The `-f` flag ensures that we don't error if some of the files exist already
+# For example, most Linux installations have a `.bashrc` file in $HOME.
+dotfiles checkout -f
+
+# We only track the files we've manually added to the working tree.
+# This is because we're basing the working tree in $HOME,
+# which would make commands like `git status` hard to read if we didn't change this setting.
+dotfiles config --local status.showUntrackedFiles no
