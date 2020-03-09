@@ -1,3 +1,5 @@
 [user]
 	email = hilmargustafs@gmail.com
 	name = Hilmar Gústafsson
+[core]
+	pager = delta --dark
