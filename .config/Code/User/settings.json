@@ -30,4 +30,5 @@
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "rust-analyzer.highlightingOn": true,
+    "update.mode": "none",
 }
