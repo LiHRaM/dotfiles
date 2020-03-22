@@ -31,4 +31,5 @@
     "editor.formatOnSave": true,
     "rust-analyzer.highlightingOn": true,
     "update.mode": "none",
+    "workbench.colorTheme": "Default Light+",
 }
