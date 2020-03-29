@@ -8,21 +8,6 @@ case $- in
       *) return;;
 esac
 
-# Source files if they exist
-# usage: source_if $1
-function source_if() {
-    local path=$1
-    if [[ -r $path ]]; then
-        source $path
-    fi
-}
-
-# Prepend to path
-function path_prepend() {
-    local prep=$1
-    PATH="$prep:$PATH"
-}
-
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -71,15 +56,6 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -91,19 +67,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-source_if $HOME/.cargo/env
-source_if $HOME/.scripts/env
-source_if $HOME/.config/node_env
-source_if $HOME/git/mcfly/mcfly.bash
-
-path_prepend /opt/node/bin
-path_prepend $HOME/.npm-packages/bin
-path_prepend $HOME/.local/bin
-path_prepend /opt/flutter/bin
-path_prepend /usr/lib/android-sdk/tools/bin
-
-export PATH=$PATH
+source $HOME/.scripts/env.sh
 
 # Launch the starship :)
 starship_bin=$(which starship)
