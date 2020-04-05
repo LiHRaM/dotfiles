@@ -1,2 +1,2 @@
 #! /usr/bin/env bash
-git --git-dir=$HOME/git/github.com/lihram/dotfiles --work-tree=$HOME ${@:1}
+git --git-dir=$HOME/git/github.com/lihram/dotfiles --work-tree=$HOME "$@"
