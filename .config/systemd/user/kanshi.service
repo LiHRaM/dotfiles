@@ -1,0 +1,11 @@
+[Unit]
+Description=Dynamic display configuration https://wayland.emersion.fr/kanshi/
+Documentation=https://github.com/emersion/kanshi/
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=kanshi
+
+[Install]
+WantedBy=sway-session.target
