@@ -136,9 +136,8 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
-# exec_always ~/.config/waybar/waybar.sh
 include /etc/sway/config.d/*
 include $HOME/.config/sway/config.d/*
 
-# This is last
+# Sway and systemd are friends.
 exec "systemctl --user import-environment; systemctl --user start sway-session.target"
