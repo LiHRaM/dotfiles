@@ -17,3 +17,5 @@ source $HOME/.scripts/env.sh
 
 # fireeeee
 eval "$(starship init zsh)"
+
+source /home/lihram/.config/broot/launcher/bash/br
