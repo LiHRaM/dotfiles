@@ -3,6 +3,9 @@ font:
     family: Cascadia Code PL
 background_opacity: 0.9
 
+mouse:
+    modifiers: Control
+
 # Base16 Material 256 - alacritty color config
 # Nate Peterson
 colors:
