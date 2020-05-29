@@ -5,8 +5,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline'
+Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
 
 call plug#end()
+
+let g:airline_powerline_fonts = 1
 
 " ColorScheme
 colorscheme base16-material
