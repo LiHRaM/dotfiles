@@ -74,3 +74,5 @@ starship_bin=$(which starship)
 if [ -e $starship_bin ]; then
   eval "$($starship_bin init bash)"
 fi
+
+source /home/lihram/.config/broot/launcher/bash/br
