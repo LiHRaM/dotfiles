@@ -10,26 +10,34 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "editor.fontFamily": "Cascadia Code PL",
+    "editor.fontFamily": "Cascadia Code PL, FontAwesome",
     "git.confirmSync": false,
     "git.autofetch": true,
     "explorer.confirmDelete": false,
     "git.enableSmartCommit": true,
-    "dart.flutterSdkPath": "/opt/flutter",
     "explorer.confirmDragAndDrop": false,
-    "latex-workshop.message.update.show": false,
-    "latex-workshop.latex.external.build.command": "tectonic",
-    "latex-workshop.latex.external.build.args": [
-        "report/master.tex"
-    ],
-    "latex-workshop.view.pdf.viewer": "tab",
     "python.jediEnabled": false,
-    "cmake.configureOnOpen": false,
     "liveshare.presence": true,
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
-    "rust-analyzer.highlightingOn": true,
     "update.mode": "none",
     "telemetry.enableTelemetry": false,
+    "todo-tree.tree.showScanModeButton": false,
+    "go.useLanguageServer": true,
+    "window.menuBarVisibility": "hidden",
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 4,
+    "extensions.ignoreRecommendations": false,
+    "java.semanticHighlighting.enabled": true,
+    "java.requirements.JDK11Warning": false,
+    "latex.server.autoDownload": true,
+    "latex.build.onSave": true,
+    "markdown.preview.fontFamily": "Fira Sans",
+    "markdown.styles": [
+        "~/.config/Code/User/markdown.css"
+    ],
+    "cSpell.userWords": [
+        "footnotemark",
+        "footnotetext"
+    ]
 }

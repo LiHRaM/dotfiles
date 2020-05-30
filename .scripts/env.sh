@@ -19,7 +19,11 @@ source_if $HOME/.scripts/env
 source_if $HOME/.config/node_env
 source_if $HOME/.nix-profile/etc/profile.d/nix.sh
 
+path_prepend $HOME/.local/bin
 path_prepend $HOME/go/bin
+path_prepend $HOME/Android/Sdk/platform-tools
+path_prepend $HOME/Android/Sdk/tools/bin/
 
 export path
+export _JAVA_AWT_WM_NONREPARENTING=1
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"

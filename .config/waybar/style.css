@@ -2,8 +2,8 @@
     border: none;
     border-radius: 0;
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: 'FontAwesome', 'Roboto Mono for Powerline';
-    font-size: 13px;
+    font-family: 'Cascadia Code PL', 'Font Awesome';
+    font-size: 14px;
     min-height: 0;
 }
 
@@ -19,15 +19,6 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
 window#waybar.termite {
     background-color: #3F3F3F;
 }
@@ -38,7 +29,7 @@ window#waybar.chromium {
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 2px 6px;
     background-color: transparent;
     color: #ffffff;
     border-bottom: 3px solid transparent;
@@ -77,6 +68,7 @@ window#waybar.chromium {
 #tray,
 #mode,
 #idle_inhibitor,
+#custom-alsa,
 #mpd {
     padding: 0 10px;
     margin: 0 4px 3px 4px;
@@ -149,20 +141,6 @@ label:focus {
     color: #2a5c45;
 }
 
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
-
 #temperature {
     background-color: #f0932b;
 }
@@ -199,4 +177,9 @@ label:focus {
 
 #mpd.paused {
     background-color: #51a37a;
+}
+
+#custom-alsa {
+    background: #d8dee9;
+    color: #3b4252;
 }
