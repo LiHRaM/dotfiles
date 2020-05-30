@@ -1,4 +1,3 @@
-edit_mode = "vi"
 path = ["/home/lihram/.local/bin", "/home/lihram/go/bin", "/home/lihram/.nix-profile/bin", "/home/lihram/.cargo/bin", "/usr/local/bin", "/usr/local/sbin", "/usr/bin", "/usr/lib/nushell/", "/usr/lib/nushell/", "/usr/lib/nushell/"]
 table_mode = "light"
 
