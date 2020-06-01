@@ -10,7 +10,7 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "editor.fontFamily": "Cascadia Code PL, FontAwesome",
+    "editor.fontFamily": "Operator Mono Medium, Cascadia Code PL, FontAwesome",
     "git.confirmSync": false,
     "git.autofetch": true,
     "explorer.confirmDelete": false,
@@ -39,5 +39,6 @@
     "cSpell.userWords": [
         "footnotemark",
         "footnotetext"
-    ]
+    ],
+    "workbench.colorTheme": "Dark+ with Italics"
 }
