@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline'
+Plug 'edkolev/tmuxline.vim'
 Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
 
 call plug#end()
