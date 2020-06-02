@@ -10,7 +10,7 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "editor.fontFamily": "Operator Mono Medium, Cascadia Code PL, FontAwesome",
+    "editor.fontFamily": "SF Mono Powerline, Operator Mono Medium, Cascadia Code PL, FontAwesome",
     "git.confirmSync": false,
     "git.autofetch": true,
     "explorer.confirmDelete": false,
