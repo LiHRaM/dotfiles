@@ -9,17 +9,8 @@ Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
 
 call plug#end()
 
-let g:airline_powerline_fonts = 1
-
 " ColorScheme
 colorscheme base16-material
-
-" netrw config
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 25
 
 " TextEdit might fail if hidden is not set.
 set hidden
