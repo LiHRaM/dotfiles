@@ -1,20 +1,31 @@
 include /etc/sway/config.d/*
 include $HOME/.config/sway/config.d/*
+include $HOME/.config/sway/config.d/variables.d/colors.d
 
 bar {
     font pango:Cascadia Code PL, FontAwesome 12
     position bottom
     status_command i3status-rs 
     colors {
-        separator #666666
-        background #222222
-        statusline #dddddd
-        focused_workspace #0088CC #0088CC #ffffff
-        active_workspace #333333 #333333 #ffffff
-        inactive_workspace #333333 #333333 #888888
-        urgent_workspace #2f343a #900000 #ffffff
+        background $base00
+        separator  $base01
+        statusline $base04
+
+        # State             Border  BG      Text
+        focused_workspace   $base0D $base0D $base00
+        active_workspace    $base03 $base03 $base00
+        inactive_workspace  $base01 $base01 $base05
+        urgent_workspace    $base08 $base08 $base00
+        binding_mode        $base00 $base0A $base00
     }
 }
+
+client.focused          $base05 $base0D $base00 $base0D $base0D
+client.focused_inactive $base01 $base01 $base05 $base03 $base01
+client.unfocused        $base01 $base00 $base05 $base01 $base01
+client.urgent           $base08 $base08 $base00 $base08 $base08
+client.placeholder      $base00 $base00 $base05 $base00 $base00
+client.background       $base07
 
 # Sway and Systemd are friends.
 exec "systemctl --user import-environment; systemctl --user start sway-session.target"
