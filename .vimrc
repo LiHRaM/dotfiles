@@ -14,8 +14,8 @@ call plug#end()
 let g:airline_powerline_fonts = 1
 
 " ColorScheme
-colorscheme base16-default-dark
-set termguicolors " https://github.com/chriskempson/base16-vim/#troubleshooting
+let base16colorspace=256
+colorscheme base16-gruvbox-dark-pale
 
 " TextEdit might fail if hidden is not set.
 set hidden
