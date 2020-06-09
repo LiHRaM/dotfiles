@@ -5,4 +5,5 @@ table_mode = "light"
 [env]
 CARGO_TARGET_DIR = "/home/lihram/.cargo/target_dir"
 _JAVA_AWT_WM_NONREPARENTING = "1"
-XDG_CURRENT_DESKTOP = "Unity"
+XDG_CURRENT_DESKTOP = "Gnome"
+
