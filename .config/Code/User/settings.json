@@ -32,10 +32,6 @@
     "java.requirements.JDK11Warning": false,
     "latex.server.autoDownload": true,
     "latex.build.onSave": true,
-    "markdown.preview.fontFamily": "Fira Sans",
-    "markdown.styles": [
-        "~/.config/Code/User/markdown.css"
-    ],
     "workbench.colorTheme": "Gruvbox Dark Soft",
     "workbench.activityBar.visible": true,
     "breadcrumbs.enabled": false,

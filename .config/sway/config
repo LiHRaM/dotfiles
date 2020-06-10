@@ -1,6 +1,6 @@
 include /etc/sway/config.d/*
 include $HOME/.config/sway/config.d/*
-include $HOME/.config/sway/config.d/variables.d/colors.d
+include $HOME/.config/sway/variables.d/colors.conf
 
 bar {
     font pango:Cascadia Code PL, FontAwesome 12
@@ -29,3 +29,4 @@ client.background       $base07
 
 # Sway and Systemd are friends.
 exec "systemctl --user import-environment; systemctl --user start sway-session.target"
+exec_always "systemctl --user restart kanshi"
