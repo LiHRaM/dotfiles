@@ -10,10 +10,13 @@ Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
 
 call plug#end()
 
+set spell
+set spelllang=da_DK,en_US
+
 " Powerline statusbar
 let g:airline_powerline_fonts = 1
 
-" ColorScheme
+" Color Scheme
 let base16colorspace=256
 colorscheme base16-gruvbox-dark-pale
 
@@ -27,14 +30,14 @@ set nowritebackup
 " Give more space for displaying messages.
 set cmdheight=2
 
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" Having longer update time (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
 set updatetime=300
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
-" Always show the signcolumn, otherwise it would shift the text each time
+" Always show the sign column, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
 set signcolumn=yes
 
