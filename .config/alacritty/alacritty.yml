@@ -1,7 +1,5 @@
 font:
     size: 11.5
-    normal:
-        family: Cascadia Code PL 
 
 mouse:
     modifiers: Control
