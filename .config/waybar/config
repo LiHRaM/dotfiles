@@ -7,17 +7,14 @@
     ],
     "modules-right": [
         "idle_inhibitor",
-        "custom/alsa",
         "network",
         "cpu",
         "memory",
         "temperature",
         "backlight",
-        "battery#bat0",
-        "battery#bat1",
+        "battery",
         "tray",
-        "clock#date",
-        "clock#time"
+        "clock"
     ],
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>", // Icon: expand-arrows-alt
@@ -34,11 +31,11 @@
         "spacing": 10
     },
     "cpu": {
-        "format": "{usage}% ",
+        "format": "{usage}% ",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% "
     },
     "temperature": {
         "critical-threshold": 80,
@@ -57,27 +54,8 @@
             ""
         ]
     },
-    "battery#bat0": {
+    "battery": {
         "bat": "BAT0",
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 10
-        },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-    },
-    "battery#bat1": {
-        "bat": "BAT1",
         "states": {
             "good": 95,
             "warning": 30,
@@ -103,23 +81,9 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
-    "custom/alsa": {
-        "exec": "amixer get Master | sed -nre 's/.*\\[off\\].*/ muted/p; s/.*\\[(.*%)\\].*/ \\1/p'",
-        "on-click": "amixer set Master toggle; pkill -x -RTMIN+11 waybar",
-        "on-scroll-up": "amixer set Master 1+; pkill -x -RTMIN+11 waybar",
-        "on-scroll-down": "amixer set Master 1-; pkill -x -RTMIN+11 waybar",
-        "signal": 11,
+    "clock": {
         "interval": 10,
-        "tooltip": false
-    },
-    "clock#time": {
-        "interval": 10,
-        "format": "{:%H:%M}",
-        "tooltip": false
-    },
-    "clock#date": {
-        "interval": 20,
-        "format": "{:%e %b %Y}", // Icon: calendar-alt
+        "format": "{:%e %b %Y  %H:%M}",
         "tooltip": false
     }
 }

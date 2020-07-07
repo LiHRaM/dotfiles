@@ -1,0 +1,164 @@
+$base00: #32302f;
+$base01: #3c3836;
+$base02: #504945;
+$base03: #665c54;
+$base04: #bdae93;
+$base05: #d5c4a1;
+$base06: #ebdbb2;
+$base07: #fbf1c7;
+$base08: #fb4934;
+$base09: #fe8019;
+$base0A: #fabd2f;
+$base0B: #b8bb26;
+$base0C: #8ec07c;
+$base0D: #83a598;
+$base0E: #d3869b;
+$base0F: #d65d0e;
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "monospace", "Font Awesome";
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: $base00;
+  border-bottom: 3px solid $base03;
+  color: $base07;
+  transition-property: background;
+  transition-duration: 0.5s;
+  &.hidden {
+    opacity: 0.2;
+  }
+  &.termite {
+    background: $base03;
+  }
+  &.chromium {
+    color: $base00;
+    background: $base06;
+    border: none;
+  }
+}
+
+#workspaces button {
+  padding: 2px 6px;
+  background: transparent;
+  color: $base07;
+  border-bottom: 3px solid transparent;
+  /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+  &:hover {
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid $base07;
+  }
+  &.focused {
+    background: $base03;
+    border-bottom: 3px solid $base07;
+  }
+  &.urgent {
+    background: $base0F;
+  }
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#custom-alsa,
+#mpd {
+  padding: 0 10px;
+  // margin: 0 4px 3px 4px;
+  color: $base00;
+}
+
+#mode {
+  color: $base07;
+  background: $base01;
+  border-bottom: 3px solid $base07;
+}
+
+#clock {
+  background: $base0E;
+}
+
+#battery {
+  background: $base07;
+  &.charging {
+    background: $base0A;
+  }
+  &.critical:not(.charging) {
+    background: $base09;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
+@keyframes blink {
+  to {
+    color: $base00;
+    background: $base07;
+  }
+}
+
+label:focus {
+  background: $base00;
+}
+
+#cpu {
+  background: $base0C;
+}
+
+#memory {
+  background: $base0E;
+}
+
+#backlight {
+  background: $base0B;
+}
+
+#network {
+  background: $base0F;
+  &.disconnected {
+    background: $base08;
+  }
+}
+
+#pulseaudio {
+  background: $base0A;
+  &.muted {
+    color: $base01;
+    background: $base0D;
+  }
+}
+
+#temperature {
+  background: $base06;
+  &.critical {
+    color: $base07;
+    background: $base08;
+  }
+}
+
+#tray {
+  background: $base00;
+}
+
+#idle_inhibitor {
+  color: $base07;
+  background: $base01;
+  &.activated {
+    background: $base05;
+  }
+}
