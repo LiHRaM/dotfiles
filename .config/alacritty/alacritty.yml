@@ -1,8 +1,11 @@
 font:
-    size: 11.5
+  size: 11.5
 
 mouse:
-    modifiers: Control
+  modifiers: Control
+
+mouse_bindings:
+  - { mouse: Middle, action: Copy }
 
 # Base16 Gruvbox dark, soft 256 - alacritty color config
 # Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)

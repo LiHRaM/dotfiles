@@ -1,9 +1,11 @@
-path = ["/home/lihram/Android/Sdk/tools/bin/", "/home/lihram/Android/Sdk/platform-tools", "/home/lihram/go/bin", "/home/lihram/.local/bin", "/home/lihram/.nix-profile/bin", "/home/lihram/.cargo/bin", "/home/lihram/.local/bin", "/home/lihram/go/bin", "/home/lihram/.nix-profile/bin", "/home/lihram/.cargo/bin", "/usr/local/bin", "/usr/local/sbin", "/usr/bin", "/usr/lib/nushell/", "/opt/android_tools/bin", "/usr/sbin", "/sbin", "/bin", "/usr/games", "/usr/local/games", "/home/lihram/.dotnet/tools", "/home/lihram/Android/Sdk/tools/bin/", "/home/lihram/Android/Sdk/platform-tools"]
+path = ["/home/lihram/.npm-packages/bin", "/home/lihram/.poetry/bin", "/home/lihram/Android/Sdk/tools/bin/", "/home/lihram/Android/Sdk/platform-tools", "/home/lihram/go/bin", "/home/lihram/.local/bin", "/home/lihram/.nix-profile/bin", "/home/lihram/.cargo/bin", "/home/lihram/.local/bin", "/home/lihram/go/bin", "/home/lihram/.nix-profile/bin", "/home/lihram/.cargo/bin", "/usr/local/bin", "/usr/local/sbin", "/usr/bin", "/usr/lib/nushell/", "/opt/android_tools/bin", "/usr/sbin", "/sbin", "/bin", "/usr/games", "/usr/local/games", "/home/lihram/.dotnet/tools", "/home/lihram/Android/Sdk/tools/bin/", "/home/lihram/Android/Sdk/platform-tools"]
 startup = ["alias update-sway [] { ~/.scripts/build_sway.sh }", "alias br [] { broot | trim | cd $it }", "alias rust [] { evcxr --ide-mode --disable-readline --opt 0 }", "alias update-nu [] { enter ~/git/github.com/nushell/nushell/; git pull; cargo build --workspace --features=stable --release; exit; enter ~/.cargo/target_dir/release; ls nu* | format \"sudo install -D {name}\n    /usr/bin/{name}\" | nu -c $it; exit; ls /usr/bin/nu*;}", "alias update-i3status-rs [] { enter ~/git/github.com/greshake/i3status-rs; git pull; cargo build --workspace --release; exit; enter ~/.cargo/target_dir/release; sudo install -D i3status-rs\n    /usr/bin/i3status-rs; exit; ls /usr/bin/i3status-rs;}", "alias cpu-low [] {sudo cpupower frequency-set -u 1.2GHz; cpupower frequency-info | grep policy | cut -d \" \" -f12}", "alias cpu-high [] {sudo cpupower frequency-set -u 4GHz; cpupower frequency-info | grep policy | cut -d \" \" -f12}"]
 table_mode = "light"
+use_starship = true
 
 [env]
 CARGO_TARGET_DIR = "/home/lihram/.cargo/target_dir"
 _JAVA_AWT_WM_NONREPARENTING = "1"
-XDG_CURRENT_DESKTOP = "Gnome"
+XDG_CURRENT_DESKTOP = "sway"
+PIPENV_VENV_IN_PROJECT = "enabled"
 
