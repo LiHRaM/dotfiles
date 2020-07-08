@@ -48,7 +48,6 @@ window#waybar {
 }
 
 #clock,
-#battery,
 #cpu,
 #memory,
 #temperature,
@@ -59,10 +58,11 @@ window#waybar {
 #tray,
 #mode,
 #idle_inhibitor,
-#custom-alsa,
+#custom-battery,
 #mpd {
   padding: 0 10px;
-  // margin: 0 4px 3px 4px;
+  margin: 0 3px 4px 3px;
+  background: $base04;
   color: $base00;
 }
 
@@ -74,28 +74,6 @@ window#waybar {
 
 #clock {
   background: $base0E;
-}
-
-#battery {
-  background: $base07;
-  &.charging {
-    background: $base0A;
-  }
-  &.critical:not(.charging) {
-    background: $base09;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-}
-
-@keyframes blink {
-  to {
-    color: $base00;
-    background: $base07;
-  }
 }
 
 label:focus {
@@ -111,7 +89,7 @@ label:focus {
 }
 
 #backlight {
-  background: $base0B;
+  background: $base07;
 }
 
 #network {
@@ -146,5 +124,27 @@ label:focus {
   background: $base01;
   &.activated {
     background: $base05;
+  }
+}
+
+#custom-battery {
+  background: $base0B;
+  &.charging {
+    background: $base0A;
+  }
+  &.critical:not(.charging) {
+    background: $base09;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
+@keyframes blink {
+  to {
+    color: $base00;
+    background: $base07;
   }
 }

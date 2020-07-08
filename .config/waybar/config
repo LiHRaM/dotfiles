@@ -1,89 +1,81 @@
 {
-    "layer": "top", // Waybar at top layer
-    "position": "bottom", // Waybar position (top|bottom|left|right)
-    "modules-left": [
-        "sway/workspaces",
-        "sway/mode"
-    ],
-    "modules-right": [
-        "idle_inhibitor",
-        "network",
-        "cpu",
-        "memory",
-        "temperature",
-        "backlight",
-        "battery",
-        "tray",
-        "clock"
-    ],
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>", // Icon: expand-arrows-alt
-        "tooltip": false
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
-    "tray": {
-        "spacing": 10
-    },
-    "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
-    },
-    "memory": {
-        "format": "{}% "
-    },
-    "temperature": {
-        "critical-threshold": 80,
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": [
-            "",
-            "",
-            ""
-        ]
-    },
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
-        "format-icons": [
-            "",
-            ""
-        ]
-    },
-    "battery": {
-        "bat": "BAT0",
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 10
-        },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-    },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
-    "clock": {
-        "interval": 10,
-        "format": "{:%e %b %Y  %H:%M}",
-        "tooltip": false
+  "layer": "top", // Waybar at top layer
+  "position": "bottom", // Waybar position (top|bottom|left|right)
+  "modules-left": ["sway/workspaces", "sway/mode"],
+  "modules-right": [
+    "idle_inhibitor",
+    "network",
+    "cpu",
+    "backlight",
+    "custom/battery",
+    "pulseaudio",
+    "clock",
+    "tray"
+  ],
+  "sway/mode": {
+    "format": "<span style=\"italic\">{}</span>", // Icon: expand-arrows-alt
+    "tooltip": false
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
     }
+  },
+  "tray": {
+    "spacing": 10
+  },
+  "cpu": {
+    "format": "{usage}% ",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "{}% "
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "{temperatureC}°C {icon}",
+    "format-icons": ["", "", ""]
+  },
+  "backlight": {
+    // "device": "acpi_video1",
+    "format": "{percent}% {icon}",
+    "format-icons": ["", ""]
+  },
+  "custom/battery": {
+    "format": "{}",
+    "exec": "waybar-upower",
+    "return-type": "json",
+    "interval": 5
+  },
+  "network": {
+    // "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "Disconnected ⚠",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+  },
+  "clock": {
+    "interval": 10,
+    "format": "{:%e %b %Y  %H:%M}",
+    "tooltip": false
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""]
+    },
+    "scroll-step": 1,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+  }
 }

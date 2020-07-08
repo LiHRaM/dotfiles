@@ -46,7 +46,6 @@ window#waybar.chromium {
 }
 
 #clock,
-#battery,
 #cpu,
 #memory,
 #temperature,
@@ -57,9 +56,11 @@ window#waybar.chromium {
 #tray,
 #mode,
 #idle_inhibitor,
-#custom-alsa,
+#custom-battery,
 #mpd {
   padding: 0 10px;
+  margin: 0 3px 4px 3px;
+  background: #bdae93;
   color: #32302f;
 }
 
@@ -71,28 +72,6 @@ window#waybar.chromium {
 
 #clock {
   background: #d3869b;
-}
-
-#battery {
-  background: #fbf1c7;
-}
-#battery.charging {
-  background: #fabd2f;
-}
-#battery.critical:not(.charging) {
-  background: #fe8019;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes blink {
-  to {
-    color: #32302f;
-    background: #fbf1c7;
-  }
 }
 
 label:focus {
@@ -108,7 +87,7 @@ label:focus {
 }
 
 #backlight {
-  background: #b8bb26;
+  background: #fbf1c7;
 }
 
 #network {
@@ -144,4 +123,26 @@ label:focus {
 }
 #idle_inhibitor.activated {
   background: #d5c4a1;
+}
+
+#custom-battery {
+  background: #b8bb26;
+}
+#custom-battery.charging {
+  background: #fabd2f;
+}
+#custom-battery.critical:not(.charging) {
+  background: #fe8019;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  to {
+    color: #32302f;
+    background: #fbf1c7;
+  }
 }
