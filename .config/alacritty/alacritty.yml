@@ -7,45 +7,25 @@ mouse:
 mouse_bindings:
   - { mouse: Middle, action: Copy }
 
-# Base16 Gruvbox dark, soft 256 - alacritty color config
-# Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 colors:
-  # Default colors
-  primary:
-    background: '0x32302f'
-    foreground: '0xd5c4a1'
 
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '0x32302f'
-    cursor: '0xd5c4a1'
-
-  # Normal colors
   normal:
-    black:   '0x32302f'
-    red:     '0xfb4934'
-    green:   '0xb8bb26'
-    yellow:  '0xfabd2f'
-    blue:    '0x83a598'
-    magenta: '0xd3869b'
-    cyan:    '0x8ec07c'
-    white:   '0xd5c4a1'
+    black:   '0x0a222d'
+    red:     '0x9f6c71'
+    green:   '0xd68278'
+    yellow:  '0xfd8d69'
+    blue:    '0x134256'
+    magenta: '0xc7988b'
+    cyan:    '0x0ACDAC'
+    white:   '0x8FB8DE'
 
-  # Bright colors
   bright:
-    black:   '0x665c54'
-    red:     '0xfb4934'
-    green:   '0xb8bb26'
-    yellow:  '0xfabd2f'
-    blue:    '0x83a598'
-    magenta: '0xd3869b'
-    cyan:    '0x8ec07c'
-    white:   '0xfbf1c7'
+    black:   '0x1E3176'
+    red:     '0xF2738F'
+    green:   '0x01C15B'
+    yellow:  '0xECE4A7'
+    blue:    '0xB86BB6'
+    magenta: '0xFB5BA0'
+    cyan:    '0x16F4D0'
+    white:   '0xB8D2EA'
 
-  indexed_colors:
-    - { index: 16, color: '0xfe8019' }
-    - { index: 17, color: '0xd65d0e' }
-    - { index: 18, color: '0x3c3836' }
-    - { index: 19, color: '0x504945' }
-    - { index: 20, color: '0xbdae93' }
-    - { index: 21, color: '0xebdbb2' }
