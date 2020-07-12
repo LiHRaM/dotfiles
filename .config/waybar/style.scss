@@ -47,23 +47,23 @@ window#waybar {
   }
 }
 
-#clock,
-#cpu,
-#memory,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#custom-battery,
-#mpd {
+widget > label,
+#tray {
   padding: 0 10px;
   margin: 0 3px 4px 3px;
-  background: $base04;
-  color: $base00;
+  color: $base06;
+  background: $base02;
+}
+
+widget > label {
+  &.muted,
+  &.critical,
+  &.activated,
+  &.disconnected {
+    color: $base02;
+    background-color: $base06
+    ;
+  }
 }
 
 #mode {
@@ -72,74 +72,13 @@ window#waybar {
   border-bottom: 3px solid $base07;
 }
 
-#clock {
-  background: $base0E;
-}
-
-label:focus {
-  background: $base00;
-}
-
-#cpu {
-  background: $base0C;
-}
-
-#memory {
-  background: $base0E;
-}
-
-#backlight {
-  background: $base07;
-}
-
-#network {
-  background: $base0F;
-  &.disconnected {
-    background: $base08;
-  }
-}
-
-#pulseaudio {
-  background: $base0A;
-  &.muted {
-    color: $base01;
-    background: $base0D;
-  }
-}
-
-#temperature {
-  background: $base06;
-  &.critical {
-    color: $base07;
-    background: $base08;
-  }
-}
-
-#tray {
-  background: $base00;
-}
-
-#idle_inhibitor {
-  color: $base07;
-  background: $base01;
-  &.activated {
-    background: $base05;
-  }
-}
-
-#custom-battery {
-  background: $base0B;
-  &.charging {
-    background: $base0A;
-  }
-  &.critical:not(.charging) {
-    background: $base09;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
+#custom-battery.critical:not(.charging) {
+  background: $base09;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes blink {

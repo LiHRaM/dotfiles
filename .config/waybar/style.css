@@ -45,23 +45,17 @@ window#waybar.chromium {
   background: #d65d0e;
 }
 
-#clock,
-#cpu,
-#memory,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#custom-battery,
-#mpd {
+widget > label,
+#tray {
   padding: 0 10px;
   margin: 0 3px 4px 3px;
-  background: #bdae93;
-  color: #32302f;
+  color: #ebdbb2;
+  background: #504945;
+}
+
+widget > label.muted, widget > label.critical, widget > label.activated, widget > label.disconnected {
+  color: #504945;
+  background-color: #ebdbb2;
 }
 
 #mode {
@@ -70,67 +64,6 @@ window#waybar.chromium {
   border-bottom: 3px solid #fbf1c7;
 }
 
-#clock {
-  background: #d3869b;
-}
-
-label:focus {
-  background: #32302f;
-}
-
-#cpu {
-  background: #8ec07c;
-}
-
-#memory {
-  background: #d3869b;
-}
-
-#backlight {
-  background: #fbf1c7;
-}
-
-#network {
-  background: #d65d0e;
-}
-#network.disconnected {
-  background: #fb4934;
-}
-
-#pulseaudio {
-  background: #fabd2f;
-}
-#pulseaudio.muted {
-  color: #3c3836;
-  background: #83a598;
-}
-
-#temperature {
-  background: #ebdbb2;
-}
-#temperature.critical {
-  color: #fbf1c7;
-  background: #fb4934;
-}
-
-#tray {
-  background: #32302f;
-}
-
-#idle_inhibitor {
-  color: #fbf1c7;
-  background: #3c3836;
-}
-#idle_inhibitor.activated {
-  background: #d5c4a1;
-}
-
-#custom-battery {
-  background: #b8bb26;
-}
-#custom-battery.charging {
-  background: #fabd2f;
-}
 #custom-battery.critical:not(.charging) {
   background: #fe8019;
   animation-name: blink;

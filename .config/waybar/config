@@ -4,13 +4,13 @@
   "modules-left": ["sway/workspaces", "sway/mode"],
   "modules-right": [
     "idle_inhibitor",
-    "network",
-    "cpu",
     "backlight",
-    "custom/battery",
+    "network",
     "pulseaudio",
-    "clock",
-    "tray"
+    "custom/battery",
+    "custom/buzz",
+    "tray",
+    "clock"
   ],
   "sway/mode": {
     "format": "<span style=\"italic\">{}</span>", // Icon: expand-arrows-alt
@@ -27,7 +27,7 @@
     "spacing": 10
   },
   "cpu": {
-    "format": "{usage}% ",
+    "format": "{usage}% ",
     "tooltip": false
   },
   "memory": {
@@ -45,9 +45,13 @@
   },
   "custom/battery": {
     "format": "{}",
-    "exec": "waybar-upower",
-    "return-type": "json",
-    "interval": 5
+    "exec": "/usr/local/bin/waybar-upower",
+    "return-type": "json"
+  },
+  "custom/buzz": {
+    "format": "{}",
+    "exec": "/usr/local/bin/buzz",
+    "return-type": "json"
   },
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -64,8 +68,8 @@
   },
   "pulseaudio": {
     "format": "{volume}% {icon}",
-    "format-bluetooth": "{volume}% {icon}",
-    "format-muted": "",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "Mute ",
     "format-icons": {
       "headphone": "",
       "hands-free": "",
@@ -73,7 +77,7 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", ""]
+      "default": ["", "", ""]
     },
     "scroll-step": 1,
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
