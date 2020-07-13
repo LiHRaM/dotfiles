@@ -19,3 +19,4 @@ source $HOME/.scripts/env.sh
 eval "$(starship init zsh)"
 
 source /home/lihram/.config/broot/launcher/bash/br
+if [ -e /home/lihram/.nix-profile/etc/profile.d/nix.sh ]; then . /home/lihram/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

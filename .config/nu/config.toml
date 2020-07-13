@@ -8,4 +8,4 @@ CARGO_TARGET_DIR = "/home/lihram/.cargo/target_dir"
 _JAVA_AWT_WM_NONREPARENTING = "1"
 XDG_CURRENT_DESKTOP = "sway"
 PIPENV_VENV_IN_PROJECT = "enabled"
-
+NIX_PATH = "nixpkgs=https://github.com/NixOS/nixpkgs/archive/release-19.03.tar.gz"
