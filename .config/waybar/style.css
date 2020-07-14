@@ -34,11 +34,9 @@ window#waybar.chromium {
 }
 #workspaces button:hover {
   background: rgba(0, 0, 0, 0.2);
-  border-bottom: 3px solid #fbf1c7;
 }
 #workspaces button.focused {
   background: #665c54;
-  border-bottom: 3px solid #fbf1c7;
 }
 #workspaces button.urgent {
   background: #d65d0e;
