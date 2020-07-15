@@ -10,10 +10,10 @@ fonts:
 widget:
   margin:
     margins:
-      - 20
-      - 20
-      - 20
-      - 20
+      - 10
+      - 10
+      - 10
+      - 10
     widget:
       verticalLayout:
         - launcher:
