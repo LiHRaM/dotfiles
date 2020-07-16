@@ -1,7 +1,7 @@
 * {
   border: none;
   border-radius: 8;
-  font-family: "monospace", "Font Awesome";
+  font-family: "monospace", "Font Awesome 5 Free Solid";
   font-size: 16px;
   font-weight: 500;
   min-height: 0;
@@ -28,6 +28,7 @@ window#waybar.chromium {
 
 #workspaces button {
   padding: 2px 6px;
+  border-radius: 0;
   background: transparent;
   color: #fbf1c7;
   /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -37,6 +38,7 @@ window#waybar.chromium {
 }
 #workspaces button.focused {
   background: #665c54;
+  border-bottom: 3px solid #bdae93;
 }
 #workspaces button.urgent {
   background: #d65d0e;
