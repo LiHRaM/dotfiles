@@ -17,7 +17,7 @@ widget:
     widget:
       verticalLayout:
         - launcher:
-            font_size: 24.0
+            font_size: 32.0
             length: 1800
             app_opener: ""
             term_opener: ""

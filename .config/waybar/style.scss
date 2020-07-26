@@ -9,6 +9,10 @@
   min-height: 0;
 }
 
+span.brand-font {
+    font-family: "Font Awesome 5 Free Brands";
+}
+
 window#waybar {
   background: $base00;
   border-bottom: 3px solid $base03;
@@ -33,7 +37,7 @@ window#waybar {
   border-radius: 0;
   background: transparent;
   color: $base07;
-  /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+  border-bottom: 3px solid transparent;
   &:hover {
     background: rgba(0, 0, 0, 0.2);
   }

@@ -104,3 +104,4 @@ au TabLeave * let g:lasttab = tabpagenr()
 source $HOME/.config/nvim/yaml.vim
 source $HOME/.config/nvim/ale.vim
 source $HOME/.config/nvim/wiki.vim
+source $HOME/.config/nvim/airline.vim
