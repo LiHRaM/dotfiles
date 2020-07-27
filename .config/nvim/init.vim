@@ -16,7 +16,7 @@ call plug#begin(stdpath('data') . '/plugged')
 
 call plug#end()
 
-colorscheme base16-gruvbox-dark-soft
+colorscheme base16-default-dark
 let mapleader = ","
 let base16colorspace=256
 let $LANG='en' 

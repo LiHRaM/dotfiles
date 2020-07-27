@@ -1,3 +1,9 @@
+/*
+*
+* Base16 Kirkjufell
+* Author: Hilmar Gústafsson (LiHRaM)
+*
+*/
 * {
   border: none;
   border-radius: 8;
@@ -7,14 +13,10 @@
   min-height: 0;
 }
 
-span.brand-font {
-  font-family: "Font Awesome 5 Free Brands";
-}
-
 window#waybar {
-  background: #32302f;
-  border-bottom: 3px solid #665c54;
-  color: #fbf1c7;
+  background: #000000;
+  border-bottom: 3px solid #594830;
+  color: #97e945;
   transition-property: background;
   transition-duration: 0.5s;
 }
@@ -22,11 +24,11 @@ window#waybar.hidden {
   opacity: 0.2;
 }
 window#waybar.termite {
-  background: #665c54;
+  background: #594830;
 }
 window#waybar.chromium {
-  color: #32302f;
-  background: #ebdbb2;
+  color: #97e945;
+  background: #775d1c;
   border: none;
 }
 
@@ -34,41 +36,41 @@ window#waybar.chromium {
   padding: 2px 6px;
   border-radius: 0;
   background: transparent;
-  color: #fbf1c7;
+  color: #97e945;
   border-bottom: 3px solid transparent;
 }
 #workspaces button:hover {
   background: rgba(0, 0, 0, 0.2);
 }
 #workspaces button.focused {
-  background: #665c54;
-  border-bottom: 3px solid #bdae93;
+  background: #594830;
+  border-bottom: 3px solid #495c36;
 }
 #workspaces button.urgent {
-  background: #d65d0e;
+  background: #ffffff;
 }
 
 widget > label,
 #tray {
   padding: 0 10px;
   margin: 0 3px 4px 3px;
-  color: #ebdbb2;
-  background: #504945;
+  color: #97e945;
+  background: #36301e;
 }
 
 widget > label.muted, widget > label.critical, widget > label.activated, widget > label.disconnected {
-  color: #504945;
-  background-color: #ebdbb2;
+  color: #97e945;
+  background-color: #775d1c;
 }
 
 #mode {
-  color: #fbf1c7;
-  background: #3c3836;
-  border-bottom: 3px solid #fbf1c7;
+  color: #97e945;
+  background: #1f1f22;
+  border-bottom: 3px solid #796349;
 }
 
 #custom-battery.critical:not(.charging) {
-  background: #fe8019;
+  background: #9b8e50;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -78,7 +80,7 @@ widget > label.muted, widget > label.critical, widget > label.activated, widget 
 
 @keyframes blink {
   to {
-    color: #32302f;
-    background: #fbf1c7;
+    color: #000000;
+    background: #796349;
   }
 }

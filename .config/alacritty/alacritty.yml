@@ -7,45 +7,45 @@ mouse:
 mouse_bindings:
   - { mouse: Middle, action: Copy }
 
-# Base16 Gruvbox dark, soft 256 - alacritty color config
-# Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+# Base16 Kirkjufell 256 - alacritty color config
+# Hilmar Gústafsson (LiHRaM)
 colors:
   # Default colors
   primary:
-    background: '0x32302f'
-    foreground: '0xd5c4a1'
+    background: '0x000000'
+    foreground: '0x565653'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x32302f'
-    cursor: '0xd5c4a1'
+    text: '0x000000'
+    cursor: '0x565653'
 
   # Normal colors
   normal:
-    black:   '0x32302f'
-    red:     '0xfb4934'
-    green:   '0xb8bb26'
-    yellow:  '0xfabd2f'
-    blue:    '0x83a598'
-    magenta: '0xd3869b'
-    cyan:    '0x8ec07c'
-    white:   '0xd5c4a1'
+    black:   '0x000000'
+    red:     '0x9b8978'
+    green:   '0x8f97a7'
+    yellow:  '0x8c9a84'
+    blue:    '0x97e945'
+    magenta: '0xb6e488'
+    cyan:    '0x7ba64a'
+    white:   '0x565653'
 
   # Bright colors
   bright:
-    black:   '0x665c54'
-    red:     '0xfb4934'
-    green:   '0xb8bb26'
-    yellow:  '0xfabd2f'
-    blue:    '0x83a598'
-    magenta: '0xd3869b'
-    cyan:    '0x8ec07c'
-    white:   '0xfbf1c7'
+    black:   '0x594830'
+    red:     '0x9b8978'
+    green:   '0x8f97a7'
+    yellow:  '0x8c9a84'
+    blue:    '0x97e945'
+    magenta: '0xb6e488'
+    cyan:    '0x7ba64a'
+    white:   '0x796349'
 
   indexed_colors:
-    - { index: 16, color: '0xfe8019' }
-    - { index: 17, color: '0xd65d0e' }
-    - { index: 18, color: '0x3c3836' }
-    - { index: 19, color: '0x504945' }
-    - { index: 20, color: '0xbdae93' }
-    - { index: 21, color: '0xebdbb2' }
+    - { index: 16, color: '0x9b8e50' }
+    - { index: 17, color: '0xffffff' }
+    - { index: 18, color: '0x1f1f22' }
+    - { index: 19, color: '0x36301e' }
+    - { index: 20, color: '0x495c36' }
+    - { index: 21, color: '0x775d1c' }

@@ -9,14 +9,10 @@
   min-height: 0;
 }
 
-span.brand-font {
-    font-family: "Font Awesome 5 Free Brands";
-}
-
 window#waybar {
   background: $base00;
   border-bottom: 3px solid $base03;
-  color: $base07;
+  color: $base0D;
   transition-property: background;
   transition-duration: 0.5s;
   &.hidden {
@@ -26,7 +22,7 @@ window#waybar {
     background: $base03;
   }
   &.chromium {
-    color: $base00;
+    color: $base0D;
     background: $base06;
     border: none;
   }
@@ -36,7 +32,7 @@ window#waybar {
   padding: 2px 6px;
   border-radius: 0;
   background: transparent;
-  color: $base07;
+  color: $base0D;
   border-bottom: 3px solid transparent;
   &:hover {
     background: rgba(0, 0, 0, 0.2);
@@ -54,7 +50,7 @@ widget > label,
 #tray {
   padding: 0 10px;
   margin: 0 3px 4px 3px;
-  color: $base06;
+  color: $base0D;
   background: $base02;
 }
 
@@ -63,13 +59,13 @@ widget > label {
   &.critical,
   &.activated,
   &.disconnected {
-    color: $base02;
+    color: $base0D;
     background-color: $base06;
   }
 }
 
 #mode {
-  color: $base07;
+  color: $base0D;
   background: $base01;
   border-bottom: 3px solid $base07;
 }
