@@ -1,6 +1,6 @@
 /*
 *
-* Base16 Kirkjufell
+* Base16 Vestfirðir
 * Author: Hilmar Gústafsson (LiHRaM)
 *
 */
@@ -14,9 +14,9 @@
 }
 
 window#waybar {
-  background: #000000;
-  border-bottom: 3px solid #594830;
-  color: #97e945;
+  background: #0a1829;
+  border-bottom: 3px solid #283543;
+  color: #6696c7;
   transition-property: background;
   transition-duration: 0.5s;
 }
@@ -24,11 +24,11 @@ window#waybar.hidden {
   opacity: 0.2;
 }
 window#waybar.termite {
-  background: #594830;
+  background: #283543;
 }
 window#waybar.chromium {
-  color: #97e945;
-  background: #775d1c;
+  color: #6696c7;
+  background: #365b80;
   border: none;
 }
 
@@ -36,15 +36,15 @@ window#waybar.chromium {
   padding: 2px 6px;
   border-radius: 0;
   background: transparent;
-  color: #97e945;
+  color: #6696c7;
   border-bottom: 3px solid transparent;
 }
 #workspaces button:hover {
   background: rgba(0, 0, 0, 0.2);
 }
 #workspaces button.focused {
-  background: #594830;
-  border-bottom: 3px solid #495c36;
+  background: #283543;
+  border-bottom: 3px solid #3f464e;
 }
 #workspaces button.urgent {
   background: #ffffff;
@@ -54,23 +54,23 @@ widget > label,
 #tray {
   padding: 0 10px;
   margin: 0 3px 4px 3px;
-  color: #97e945;
-  background: #36301e;
+  color: #6696c7;
+  background: #033066;
 }
 
 widget > label.muted, widget > label.critical, widget > label.activated, widget > label.disconnected {
-  color: #97e945;
-  background-color: #775d1c;
+  color: #033066;
+  background-color: #468fcd;
 }
 
 #mode {
-  color: #97e945;
-  background: #1f1f22;
-  border-bottom: 3px solid #796349;
+  color: #6696c7;
+  background: #09213f;
+  border-radius: 0;
 }
 
 #custom-battery.critical:not(.charging) {
-  background: #9b8e50;
+  background: #1992ea;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -80,7 +80,7 @@ widget > label.muted, widget > label.critical, widget > label.activated, widget 
 
 @keyframes blink {
   to {
-    color: #000000;
-    background: #796349;
+    color: #0a1829;
+    background: #585651;
   }
 }

@@ -47,5 +47,12 @@
   "python.languageServer": "Microsoft",
   "rust-analyzer.checkOnSave.command": "clippy",
   "latex.build.executable": "tectonic",
-  "latex.build.args": ["%f", "--synctex", "--keep-logs"]
+  "latex.build.args": [
+    "%f",
+    "--synctex",
+    "--keep-logs"
+  ],
+  "workbench.colorCustomizations": {
+    
+  }
 }

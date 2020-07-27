@@ -7,45 +7,45 @@ mouse:
 mouse_bindings:
   - { mouse: Middle, action: Copy }
 
-# Base16 Kirkjufell 256 - alacritty color config
+# Base16 Vestfirðir 256 - alacritty color config
 # Hilmar Gústafsson (LiHRaM)
 colors:
   # Default colors
   primary:
-    background: '0x000000'
-    foreground: '0x565653'
+    background: '0x0a1829'
+    foreground: '0x1e5387'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x000000'
-    cursor: '0x565653'
+    text: '0x0a1829'
+    cursor: '0x1e5387'
 
   # Normal colors
   normal:
-    black:   '0x000000'
-    red:     '0x9b8978'
-    green:   '0x8f97a7'
-    yellow:  '0x8c9a84'
-    blue:    '0x97e945'
-    magenta: '0xb6e488'
-    cyan:    '0x7ba64a'
-    white:   '0x565653'
+    black:   '0x0a1829'
+    red:     '0x3271a9'
+    green:   '0x978872'
+    yellow:  '0x468fcd'
+    blue:    '0x6696c7'
+    magenta: '0x71b4f3'
+    cyan:    '0x379ff1'
+    white:   '0x1e5387'
 
   # Bright colors
   bright:
-    black:   '0x594830'
-    red:     '0x9b8978'
-    green:   '0x8f97a7'
-    yellow:  '0x8c9a84'
-    blue:    '0x97e945'
-    magenta: '0xb6e488'
-    cyan:    '0x7ba64a'
-    white:   '0x796349'
+    black:   '0x283543'
+    red:     '0x3271a9'
+    green:   '0x978872'
+    yellow:  '0x468fcd'
+    blue:    '0x6696c7'
+    magenta: '0x71b4f3'
+    cyan:    '0x379ff1'
+    white:   '0x585651'
 
   indexed_colors:
-    - { index: 16, color: '0x9b8e50' }
+    - { index: 16, color: '0x1992ea' }
     - { index: 17, color: '0xffffff' }
-    - { index: 18, color: '0x1f1f22' }
-    - { index: 19, color: '0x36301e' }
-    - { index: 20, color: '0x495c36' }
-    - { index: 21, color: '0x775d1c' }
+    - { index: 18, color: '0x09213f' }
+    - { index: 19, color: '0x033066' }
+    - { index: 20, color: '0x3f464e' }
+    - { index: 21, color: '0x365b80' }

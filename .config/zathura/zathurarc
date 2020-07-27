@@ -1,42 +1,35 @@
-set recolor                     "true" 
+# Base16 Vestfirðir
+# Author: Hilmar Gústafsson (LiHRaM)
+
+set default-bg                  "#0a1829"
+set default-fg                  "#09213f"
+
+set statusbar-fg                "#3f464e"
+set statusbar-bg                "#033066"
+
+set inputbar-bg                 "#0a1829"
+set inputbar-fg                 "#585651"
+
+set notification-bg             "#0a1829"
+set notification-fg             "#585651"
+
+set notification-error-bg       "#0a1829"
+set notification-error-fg       "#3271a9"
+
+set notification-warning-bg     "#0a1829"
+set notification-warning-fg     "#3271a9"
+
+set highlight-color             "#468fcd"
+set highlight-active-color      "#6696c7"
+
+set completion-bg               "#09213f"
+set completion-fg               "#6696c7"
+
+set completion-highlight-fg     "#585651"
+set completion-highlight-bg     "#6696c7"
+
+set recolor-lightcolor          "#0a1829"
+set recolor-darkcolor           "#365b80"
+
+set recolor                     "false"
 set recolor-keephue             "false"
-set selection-clipboard         clipboard
-
-set guioptions "" # hide statusbar
-
-# Support reverse search in VSCode
-set synctex                     "true"
-set synctex-editor-command      "code -g %{input}:%{line}"
-
-# Base16 Gruvbox dark, soft
-# Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
-
-set default-bg                  "#32302f"
-set default-fg                  "#3c3836"
-
-set statusbar-fg                "#bdae93"
-set statusbar-bg                "#504945"
-
-set inputbar-bg                 "#32302f"
-set inputbar-fg                 "#fbf1c7"
-
-set notification-bg             "#32302f"
-set notification-fg             "#fbf1c7"
-
-set notification-error-bg       "#32302f"
-set notification-error-fg       "#fb4934"
-
-set notification-warning-bg     "#32302f"
-set notification-warning-fg     "#fb4934"
-
-set highlight-color             "#fabd2f"
-set highlight-active-color      "#83a598"
-
-set completion-bg               "#3c3836"
-set completion-fg               "#83a598"
-
-set completion-highlight-fg     "#fbf1c7"
-set completion-highlight-bg     "#83a598"
-
-set recolor-lightcolor          "#32302f"
-set recolor-darkcolor           "#ebdbb2"

@@ -12,23 +12,21 @@ width=350
 anchor=bottom-right
 
 # The default timeout takes milliseconds
-default-timeout=4000
-
-## Base16 Kirkjufell
+default-timeout=4000## Base16 Vestfirðir
 # Author: Hilmar Gústafsson (LiHRaM)
 #
 # You can use these variables anywhere in the mako configuration file.
 
-background-color=#000000
-text-color=#565653
-border-color=#97e945
+background-color=#0a1829
+text-color=#1e5387
+border-color=#6696c7
 
 [urgency=low]
-background-color=#000000
-text-color=#8c9a84
-border-color=#97e945
+background-color=#0a1829
+text-color=#468fcd
+border-color=#6696c7
 
 [urgency=high]
-background-color=#000000
-text-color=#9b8978
-border-color=#97e945
+background-color=#0a1829
+text-color=#3271a9
+border-color=#6696c7

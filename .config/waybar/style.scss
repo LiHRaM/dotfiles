@@ -59,15 +59,15 @@ widget > label {
   &.critical,
   &.activated,
   &.disconnected {
-    color: $base0D;
-    background-color: $base06;
+    color: $base02;
+    background-color: $base0A;
   }
 }
 
 #mode {
   color: $base0D;
   background: $base01;
-  border-bottom: 3px solid $base07;
+  border-radius: 0;
 }
 
 #custom-battery.critical:not(.charging) {

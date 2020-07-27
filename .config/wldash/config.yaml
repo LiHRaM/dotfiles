@@ -1,10 +1,5 @@
 outputMode: active
 scale: 1
-background:
-  red: 0.19607843137254901960784313
-  green: 0.18823529411764705882352941
-  blue: 0.18431372549019607843137254
-  opacity: 1.0
 fonts:
   sans: sans
 widget:
@@ -22,3 +17,8 @@ widget:
             app_opener: ""
             term_opener: ""
             url_opener: ""
+background:
+  red: 0.0392156862745098
+  green: 0.09411764705882353
+  blue: 0.1607843137254902
+  opacity: 1.0

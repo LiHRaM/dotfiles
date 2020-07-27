@@ -16,7 +16,7 @@ call plug#begin(stdpath('data') . '/plugged')
 
 call plug#end()
 
-colorscheme base16-default-dark
+" colorscheme base16-default-dark
 let mapleader = ","
 let base16colorspace=256
 let $LANG='en' 
@@ -105,3 +105,4 @@ source $HOME/.config/nvim/yaml.vim
 source $HOME/.config/nvim/ale.vim
 source $HOME/.config/nvim/wiki.vim
 source $HOME/.config/nvim/airline.vim
+source $HOME/.config/nvim/base16.vim
