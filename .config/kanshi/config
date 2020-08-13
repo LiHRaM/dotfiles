@@ -1,0 +1,9 @@
+profile {
+    output eDP-1 enable
+}
+
+profile {
+    output eDP-1 disable
+    output "Lenovo Group Limited LEN L24e-20 0x00000101" enable 
+    output "Lenovo Group Limited LEN L24e-20 0x00000101" enable 
+}
