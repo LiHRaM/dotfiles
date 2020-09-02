@@ -1,58 +1,289 @@
 {
-  "files.autoSave": "afterDelay",
-  "window.zoomLevel": 0,
-  "editor.minimap.enabled": false,
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "editor.fontFamily": "Cascadia Code PL, FontAwesome",
-  "git.confirmSync": false,
-  "git.autofetch": true,
-  "explorer.confirmDelete": false,
-  "git.enableSmartCommit": true,
-  "explorer.confirmDragAndDrop": false,
-  "python.jediEnabled": false,
-  "liveshare.presence": true,
-  "editor.fontLigatures": true,
-  "editor.formatOnSave": true,
-  "update.mode": "none",
-  "telemetry.enableTelemetry": false,
-  "todo-tree.tree.showScanModeButton": false,
-  "go.useLanguageServer": true,
-  "window.menuBarVisibility": "hidden",
-  "workbench.editor.limit.enabled": true,
-  "workbench.editor.limit.value": 4,
-  "extensions.ignoreRecommendations": false,
-  "java.semanticHighlighting.enabled": true,
-  "java.requirements.JDK11Warning": false,
-  "latex.server.autoDownload": true,
-  "latex.build.onSave": true,
-  "workbench.colorTheme": "Gruvbox Dark Soft",
-  "workbench.activityBar.visible": true,
-  "breadcrumbs.enabled": false,
-  "workbench.editor.showTabs": true,
-  "terminal.integrated.shell.linux": "nu",
-  "java.imports.gradle.wrapper.checksums": [
-    {
-      "sha256": "e2b82129ab64751fd40437007bd2f7f2afb3c6e41a9198e628650b22d5824a14",
-      "allowed": true
+    "files.autoSave": "afterDelay",
+    "window.zoomLevel": 0,
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.fontFamily": "Cascadia Code PL, FontAwesome",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "explorer.confirmDelete": false,
+    "git.enableSmartCommit": true,
+    "explorer.confirmDragAndDrop": false,
+    "python.jediEnabled": false,
+    "liveshare.presence": true,
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "update.mode": "none",
+    "telemetry.enableTelemetry": false,
+    "todo-tree.tree.showScanModeButton": false,
+    "go.useLanguageServer": true,
+    "window.menuBarVisibility": "hidden",
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 4,
+    "extensions.ignoreRecommendations": false,
+    "java.semanticHighlighting.enabled": true,
+    "java.requirements.JDK11Warning": false,
+    "latex.server.autoDownload": true,
+    "latex.build.onSave": true,
+    "workbench.activityBar.visible": true,
+    "breadcrumbs.enabled": false,
+    "workbench.editor.showTabs": true,
+    "terminal.integrated.shell.linux": "nu",
+    "java.imports.gradle.wrapper.checksums": [
+        {
+            "sha256": "e2b82129ab64751fd40437007bd2f7f2afb3c6e41a9198e628650b22d5824a14",
+            "allowed": true
+        }
+    ],
+    "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltcIjk5OTk5OVwiLFwiODA4MDgwXCIsXCIwMDAwMDBcIixcIkM0QzRDNFwiLFwiOTk5OUZGXCIsXCJGRjk5Q0NcIixcIkNDQ0NDQ1wiXSxcImZvcm1hdFdpZHRoXCI6XCIyNDBcIixcImNyZWF0ZVRhcmdldFwiOmZhbHNlLFwicGFnZUZvcm1hdFwiOntcInhcIjowLFwieVwiOjAsXCJ3aWR0aFwiOjIwMCxcImhlaWdodFwiOjIwMH0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
+    "python.languageServer": "Microsoft",
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "latex.build.executable": "tectonic",
+    "latex.build.args": [
+        "%f",
+        "--synctex",
+        "--keep-logs"
+    ],
+    "pgsql.connections": [
+        {
+            "host": "localhost",
+            "dbname": "centrica",
+            "user": "postgres",
+            "password": "",
+            "emptyPasswordInput": false,
+            "port": "5432",
+            "profileName": "localhost"
+        }
+    ],
+    "csharp.format.enable": true,
+    "editor.formatOnType": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "profileSwitcher.profiles": [
+        "C#",
+        "CrankJS"
+    ],
+    "profileSwitcher.storage": {
+        "C#": {
+            "files.autoSave": "afterDelay",
+            "window.zoomLevel": 0,
+            "editor.minimap.enabled": false,
+            "editor.suggestSelection": "first",
+            "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+            "files.exclude": {
+                "**/.classpath": true,
+                "**/.project": true,
+                "**/.settings": true,
+                "**/.factorypath": true
+            },
+            "editor.fontFamily": "Cascadia Code PL, FontAwesome",
+            "git.confirmSync": false,
+            "git.autofetch": true,
+            "explorer.confirmDelete": false,
+            "git.enableSmartCommit": true,
+            "explorer.confirmDragAndDrop": false,
+            "python.jediEnabled": false,
+            "liveshare.presence": true,
+            "editor.fontLigatures": true,
+            "editor.formatOnSave": true,
+            "update.mode": "none",
+            "telemetry.enableTelemetry": false,
+            "todo-tree.tree.showScanModeButton": false,
+            "go.useLanguageServer": true,
+            "window.menuBarVisibility": "hidden",
+            "workbench.editor.limit.enabled": true,
+            "workbench.editor.limit.value": 4,
+            "extensions.ignoreRecommendations": false,
+            "java.semanticHighlighting.enabled": true,
+            "java.requirements.JDK11Warning": false,
+            "latex.server.autoDownload": true,
+            "latex.build.onSave": true,
+            "workbench.activityBar.visible": true,
+            "breadcrumbs.enabled": false,
+            "workbench.editor.showTabs": true,
+            "terminal.integrated.shell.linux": "nu",
+            "java.imports.gradle.wrapper.checksums": [
+                {
+                    "sha256": "e2b82129ab64751fd40437007bd2f7f2afb3c6e41a9198e628650b22d5824a14",
+                    "allowed": true
+                }
+            ],
+            "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltcIjk5OTk5OVwiLFwiODA4MDgwXCIsXCIwMDAwMDBcIixcIkM0QzRDNFwiLFwiOTk5OUZGXCIsXCJGRjk5Q0NcIixcIkNDQ0NDQ1wiXSxcImZvcm1hdFdpZHRoXCI6XCIyNDBcIixcImNyZWF0ZVRhcmdldFwiOmZhbHNlLFwicGFnZUZvcm1hdFwiOntcInhcIjowLFwieVwiOjAsXCJ3aWR0aFwiOjIwMCxcImhlaWdodFwiOjIwMH0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
+            "python.languageServer": "Microsoft",
+            "rust-analyzer.checkOnSave.command": "clippy",
+            "latex.build.executable": "tectonic",
+            "latex.build.args": [
+                "%f",
+                "--synctex",
+                "--keep-logs"
+            ],
+            "workbench.colorCustomizations": {},
+            "pgsql.connections": [
+                {
+                    "host": "localhost",
+                    "dbname": "centrica",
+                    "user": "postgres",
+                    "password": "",
+                    "emptyPasswordInput": false,
+                    "port": "5432",
+                    "profileName": "localhost"
+                }
+            ],
+            "csharp.format.enable": true,
+            "editor.formatOnType": true,
+            "typescript.updateImportsOnFileMove.enabled": "always",
+            "[typescript]": {
+                "editor.defaultFormatter": "vscode.typescript-language-features"
+            }
+        },
+        "CrankJS": {
+            "files.autoSave": "afterDelay",
+            "window.zoomLevel": 0,
+            "editor.minimap.enabled": false,
+            "editor.suggestSelection": "first",
+            "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+            "files.exclude": {
+                "**/.classpath": true,
+                "**/.project": true,
+                "**/.settings": true,
+                "**/.factorypath": true
+            },
+            "editor.fontFamily": "Cascadia Code PL, FontAwesome",
+            "git.confirmSync": false,
+            "git.autofetch": true,
+            "explorer.confirmDelete": false,
+            "git.enableSmartCommit": true,
+            "explorer.confirmDragAndDrop": false,
+            "python.jediEnabled": false,
+            "liveshare.presence": true,
+            "editor.fontLigatures": true,
+            "editor.formatOnSave": true,
+            "update.mode": "none",
+            "telemetry.enableTelemetry": false,
+            "todo-tree.tree.showScanModeButton": false,
+            "go.useLanguageServer": true,
+            "window.menuBarVisibility": "hidden",
+            "workbench.editor.limit.enabled": true,
+            "workbench.editor.limit.value": 4,
+            "extensions.ignoreRecommendations": false,
+            "java.semanticHighlighting.enabled": true,
+            "java.requirements.JDK11Warning": false,
+            "latex.server.autoDownload": true,
+            "latex.build.onSave": true,
+            "workbench.activityBar.visible": true,
+            "breadcrumbs.enabled": false,
+            "workbench.editor.showTabs": true,
+            "terminal.integrated.shell.linux": "nu",
+            "java.imports.gradle.wrapper.checksums": [
+                {
+                    "sha256": "e2b82129ab64751fd40437007bd2f7f2afb3c6e41a9198e628650b22d5824a14",
+                    "allowed": true
+                }
+            ],
+            "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltcIjk5OTk5OVwiLFwiODA4MDgwXCIsXCIwMDAwMDBcIixcIkM0QzRDNFwiLFwiOTk5OUZGXCIsXCJGRjk5Q0NcIixcIkNDQ0NDQ1wiXSxcImZvcm1hdFdpZHRoXCI6XCIyNDBcIixcImNyZWF0ZVRhcmdldFwiOmZhbHNlLFwicGFnZUZvcm1hdFwiOntcInhcIjowLFwieVwiOjAsXCJ3aWR0aFwiOjIwMCxcImhlaWdodFwiOjIwMH0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
+            "python.languageServer": "Microsoft",
+            "rust-analyzer.checkOnSave.command": "clippy",
+            "latex.build.executable": "tectonic",
+            "latex.build.args": [
+                "%f",
+                "--synctex",
+                "--keep-logs"
+            ],
+            "workbench.colorCustomizations": {},
+            "pgsql.connections": [
+                {
+                    "host": "localhost",
+                    "dbname": "centrica",
+                    "user": "postgres",
+                    "password": "",
+                    "emptyPasswordInput": false,
+                    "port": "5432",
+                    "profileName": "localhost"
+                }
+            ],
+            "csharp.format.enable": true,
+            "editor.formatOnType": true,
+            "typescript.updateImportsOnFileMove.enabled": "always",
+            "[typescript]": {
+                "editor.defaultFormatter": "vscode.typescript-language-features"
+            }
+        }
+    },
+    "profileSwitcher.extensions": {
+        "C#": [
+            {
+                "publisherId": "undefined_publisher.base16-vestfirdir",
+                "publisherName": "undefined_publisher",
+                "version": "0.0.1",
+                "name": "base16-vestfirdir"
+            },
+            {
+                "id": "af14ddf1-c53e-4d84-82d2-f0d31549ea80",
+                "publisherId": "Fudge.auto-using",
+                "publisherName": "Fudge",
+                "version": "0.7.15",
+                "name": "auto-using"
+            },
+            {
+                "id": "d1a2eab4-aa6e-4094-93b3-6a007f60bd9d",
+                "publisherId": "k--kato.docomment",
+                "publisherName": "k--kato",
+                "version": "0.1.18",
+                "name": "docomment"
+            },
+            {
+                "id": "0479fc1c-3d67-49f9-b087-fb9069afe48f",
+                "publisherId": "ms-azuretools.vscode-docker",
+                "publisherName": "ms-azuretools",
+                "version": "1.5.0",
+                "name": "vscode-docker"
+            },
+            {
+                "id": "d0bfc4ab-1d3a-4487-8782-7cf6027b4fff",
+                "publisherId": "ms-dotnettools.csharp",
+                "publisherName": "ms-dotnettools",
+                "version": "1.23.1",
+                "name": "csharp"
+            },
+            {
+                "id": "4386e6f6-ec10-4463-9d23-c24278718947",
+                "publisherId": "tomoki1207.pdf",
+                "publisherName": "tomoki1207",
+                "version": "1.1.0",
+                "name": "pdf"
+            }
+        ],
+        "CrankJS": [
+            {
+                "publisherId": "undefined_publisher.base16-vestfirdir",
+                "publisherName": "undefined_publisher",
+                "version": "0.0.1",
+                "name": "base16-vestfirdir"
+            },
+            {
+                "id": "583b2b34-2c1e-4634-8c0b-0b82e283ea3a",
+                "publisherId": "dbaeumer.vscode-eslint",
+                "publisherName": "dbaeumer",
+                "version": "2.1.8",
+                "name": "vscode-eslint"
+            },
+            {
+                "id": "90a37ca1-92a2-488a-b196-7a8c0b0127ea",
+                "publisherId": "ms-vscode.vscode-typescript-tslint-plugin",
+                "publisherName": "ms-vscode",
+                "version": "1.2.3",
+                "name": "vscode-typescript-tslint-plugin"
+            },
+            {
+                "id": "4386e6f6-ec10-4463-9d23-c24278718947",
+                "publisherId": "tomoki1207.pdf",
+                "publisherName": "tomoki1207",
+                "version": "1.1.0",
+                "name": "pdf"
+            }
+        ]
     }
-  ],
-  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltcIjk5OTk5OVwiLFwiODA4MDgwXCIsXCIwMDAwMDBcIixcIkM0QzRDNFwiLFwiOTk5OUZGXCIsXCJGRjk5Q0NcIixcIkNDQ0NDQ1wiXSxcImZvcm1hdFdpZHRoXCI6XCIyNDBcIixcImNyZWF0ZVRhcmdldFwiOmZhbHNlLFwicGFnZUZvcm1hdFwiOntcInhcIjowLFwieVwiOjAsXCJ3aWR0aFwiOjIwMCxcImhlaWdodFwiOjIwMH0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
-  "python.languageServer": "Microsoft",
-  "rust-analyzer.checkOnSave.command": "clippy",
-  "latex.build.executable": "tectonic",
-  "latex.build.args": [
-    "%f",
-    "--synctex",
-    "--keep-logs"
-  ],
-  "workbench.colorCustomizations": {
-    
-  }
 }

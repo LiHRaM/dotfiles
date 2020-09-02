@@ -1,5 +1,8 @@
 ignore-empty-password
-image=~/Pictures/background_locked.png
+image=~/Pictures/background_dark_locked.png
 show-keyboard-layout
-color=000000
 scaling=fit
+## Base16 Vestfirðir
+# Author: Hilmar Gústafsson (LiHRaM)
+
+color=#0a1829

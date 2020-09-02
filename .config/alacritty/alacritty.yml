@@ -7,45 +7,45 @@ mouse:
 mouse_bindings:
   - { mouse: Middle, action: Copy }
 
-# Base16 Vestfirðir 256 - alacritty color config
-# Hilmar Gústafsson (LiHRaM)
+# Base16 Default Dark 256 - alacritty color config
+# Chris Kempson (http://chriskempson.com)
 colors:
   # Default colors
   primary:
-    background: '0x0a1829'
-    foreground: '0x1e5387'
+    background: '0x181818'
+    foreground: '0xd8d8d8'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x0a1829'
-    cursor: '0x1e5387'
+    text: '0x181818'
+    cursor: '0xd8d8d8'
 
   # Normal colors
   normal:
-    black:   '0x0a1829'
-    red:     '0x3271a9'
-    green:   '0x978872'
-    yellow:  '0x468fcd'
-    blue:    '0x6696c7'
-    magenta: '0x71b4f3'
-    cyan:    '0x379ff1'
-    white:   '0x1e5387'
+    black:   '0x181818'
+    red:     '0xab4642'
+    green:   '0xa1b56c'
+    yellow:  '0xf7ca88'
+    blue:    '0x7cafc2'
+    magenta: '0xba8baf'
+    cyan:    '0x86c1b9'
+    white:   '0xd8d8d8'
 
   # Bright colors
   bright:
-    black:   '0x283543'
-    red:     '0x3271a9'
-    green:   '0x978872'
-    yellow:  '0x468fcd'
-    blue:    '0x6696c7'
-    magenta: '0x71b4f3'
-    cyan:    '0x379ff1'
-    white:   '0x585651'
+    black:   '0x585858'
+    red:     '0xab4642'
+    green:   '0xa1b56c'
+    yellow:  '0xf7ca88'
+    blue:    '0x7cafc2'
+    magenta: '0xba8baf'
+    cyan:    '0x86c1b9'
+    white:   '0xf8f8f8'
 
   indexed_colors:
-    - { index: 16, color: '0x1992ea' }
-    - { index: 17, color: '0xffffff' }
-    - { index: 18, color: '0x09213f' }
-    - { index: 19, color: '0x033066' }
-    - { index: 20, color: '0x3f464e' }
-    - { index: 21, color: '0x365b80' }
+    - { index: 16, color: '0xdc9656' }
+    - { index: 17, color: '0xa16946' }
+    - { index: 18, color: '0x282828' }
+    - { index: 19, color: '0x383838' }
+    - { index: 20, color: '0xb8b8b8' }
+    - { index: 21, color: '0xe8e8e8' }

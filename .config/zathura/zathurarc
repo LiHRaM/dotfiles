@@ -33,3 +33,13 @@ set recolor-darkcolor           "#365b80"
 
 set recolor                     "false"
 set recolor-keephue             "false"
+set recolor                     "true" 
+set recolor-keephue             "false"
+set selection-clipboard         clipboard
+
+set guioptions "" # hide statusbar
+
+# Support reverse search in VSCode
+set synctex                     "true"
+set synctex-editor-command      "code -g %{input}:%{line}"
+
